@@ -14,11 +14,12 @@ public class EllipseRendererService implements RendererService {
         Ellipse ellipse = (Ellipse) shape;
         g.setXORMode(shape.getColor());
 
-        g.drawOval(
-                Math.min(ellipse.getLocation().x, ellipse.getEnd().x), Math.min(ellipse.getLocation().y, ellipse.getEnd().y),
-                Math.abs(ellipse.getLocation().x - ellipse.getEnd().x),
-                Math.abs(ellipse.getLocation().y - ellipse.getEnd().y)
-        );
+        int x = Math.min(ellipse.getLocation().x, ellipse.getEnd().x);
+        int y = Math.min(ellipse.getLocation().x, ellipse.getEnd().y);
+        int width = Math.abs(ellipse.getLocation().x - ellipse.getEnd().x);
+        int height = Math.abs(ellipse.getLocation().x - ellipse.getEnd().y);
+
+        g.drawOval(x, y, width, height);
 
     }
 }
