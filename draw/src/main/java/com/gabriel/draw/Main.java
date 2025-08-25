@@ -39,5 +39,6 @@ public class Main {
         drawingFrame.setVisible(true);
         drawingFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         drawingFrame.setSize(500,500);
+        drawingFrame.setTitle("Espia_Assignment1");
     }
 }
