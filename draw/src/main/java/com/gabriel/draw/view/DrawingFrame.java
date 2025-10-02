@@ -1,6 +1,5 @@
 package com.gabriel.draw.view;
 
-import com.gabriel.draw.component.DrawingMenuBar;
 import com.gabriel.draw.controller.DrawingWindowController;
 import com.gabriel.drawfx.service.AppService;
 
