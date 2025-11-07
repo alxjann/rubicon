@@ -37,4 +37,4 @@
 You can run the main drawing application directly from Maven using the `exec-maven-plugin` configured in the `draw` module:
 
 ```sh
-mvn -pl draw exec:java
+mvn exec:java
